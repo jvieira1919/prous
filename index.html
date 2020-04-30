@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Weather Dashboard</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="row">
+                    <form class="form-inline">
+                        <input id="city" class="form-control mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button id="submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <strong>
+                            <i class="fa fa-list-alt"></i> Search History</strong>
+                    </div>
+                    <div class="card-body"></div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="row">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 id="local" class="card-title">Location</h5>
+                            <p id="temp" class="card-text">Temperature</p>
+                            <p id="humid" class="card-text">Humidity</p>
+                            <p id="wind-speed" class="card-text">Wind Speed</p>
+                            <p id="uv" class="card-text">UV Index</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h5>5-Day Forecast:</h5>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p id="loc1" class="card-text">Location</p>
+                                <p id="temp1" class="card-text">Temp</p>
+                                <p id="humid1" class="card-text">Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p id="loc2" class="card-text">Location</p>
+                                <p id="temp2" class="card-text">Temp</p>
+                                <p id="humid2" class="card-text">Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p id="loc3" class="card-text">Location</p>
+                                <p id="temp3" class="card-text">Temp</p>
+                                <p id="humid3" class="card-text">Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p id="loc4" class="card-text">Location</p>
+                                <p id="temp4" class="card-text">Temp</p>
+                                <p id="humid4" class="card-text">Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p id="loc5" class="card-text">Location</p>
+                                <p id="img5" class="card-text"></p>
+                                <p id="temp5" class="card-text">Temp</p>
+                                <p id="humid5" class="card-text">Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="jq.js"></script>
+</body>
+
+</html>
