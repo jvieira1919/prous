@@ -3,8 +3,6 @@ var api = "https://api.openweathermap.org/data/2.5/weather?q=";
 var apiKey = "&appid=0667029354c22542ea4630c17a0785dc";
 var units = "&units=imperial"
 
-
-
 var api5 = "https://api.openweathermap.org/data/2.5/forecast?q=";
 var apiKey5 = "&appid=0667029354c22542ea4630c17a0785dc";
 var units5 = "&units=imperial"
