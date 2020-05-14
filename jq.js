@@ -96,7 +96,10 @@ function renderSearchHistory() {
     historyItem.html(lastUserSearch);
     historyItem.on("click", function(){
         console.log($(this).html());
-        singleDaySearch($(this).html()); 
+        var cityName = $(this).html()
+        singleDaySearch(cityName);
+        fiveDaySearch(cityName);
+        uvSearch(cityName);
     })
 
     display.prepend(historyItem);
