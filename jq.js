@@ -92,7 +92,13 @@ function saveSearchHistory(city) {
 function renderSearchHistory() {
     var lastUserSearch = localStorage.getItem("city");
     var display = $("#display-search");
-    var historyItem = $("<p>").html(lastUserSearch);
+    var historyItem = $("<p>");
+    historyItem.html(lastUserSearch);
+    historyItem.on("click", function(){
+        console.log($(this).html());
+        singleDaySearch($(this).html()); 
+    })
+
     display.prepend(historyItem);
 };
 
